@@ -1,0 +1,270 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	font-size: 100%;
+	font-family: arial,helvetica,sans-serif;
+}
+ul{
+	list-style: none;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+    opacity: .9; 
+}
+a:hover{
+	opacity: 1;
+}
+/*HEADER*/
+header{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #fff;
+}
+header nav ul{
+	display: flex;
+}
+header nav ul li a{color: #191c03;}
+header nav ul li{
+	margin :0 25px;
+}
+header nav ul li:first-child{margin-left: 0px;}
+
+/*Media screen*/
+@media screen and (max-width: 800px){
+    header{
+    	flex-direction: column;
+    }
+    header a img{margin-bottom: 10px;}
+}
+
+/*HERO*/
+.hero{
+	background-image: url(../img/b.jpg);
+	background-size: cover;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+    color: #fff;
+}
+.hero h1{
+	font-size: 3.2rem;
+	margin-bottom: 15px;
+	text-shadow: 3px 1px #000;
+}
+.hero h3{
+	font-size: 2rem;
+	margin-bottom: 15px;
+	text-shadow: 1px 1px #000;
+}
+.hero .btn{
+	color:#191c03 ;
+	text-transform: uppercase;
+	background-color: #fff;
+	padding: 20px 50px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.hero .btn:hover{
+   background-color: #bbb;
+}
+/*Media screen*/
+@media screen and (max-width: 800px){
+   .hero{
+   	text-align: center;
+   }
+   .hero h1{font-size: 2.5rem;}
+   .hero h3{font-size: 1.5rem;}
+}
+/*CONHECA O HOTEL*/
+.conheca_o_hotel{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 100px 50px;
+	text-align: center;
+}
+.conheca_o_hotel h3{
+	font-size: 2rem;
+	margin-bottom: 35px;
+	color: #191c03;
+
+}
+.conheca_o_hotel p{
+	max-width: 800px;
+	margin-bottom: 35px;
+	color: #191c03;
+}
+.conheca_o_hotel hr{
+	width: 200px;
+	height: 2px;
+	background-color:#191c03;
+	margin-bottom: 70px;
+	border:none; 
+}
+.um{background-image: url(../img/itacare-01.jpg);}
+.dois{background-image: url(../img/itacare-02.jpg);}
+.tres{background-image: url(../img/itacare-03.jpg);}
+.quatro{background-image: url(../img/itacare-04.jpg);}
+
+.conheca_o_hotel .grid{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+.conheca_o_hotel .grid li {
+	height: 350px;
+	padding: 20px;
+	border-radius: 4px;
+	background-clip: content-box;
+	background-size: cover;
+	background-position: center;
+
+}
+.conheca_o_hotel .grid li.small {
+     flex-basis: 40%;
+}
+.conheca_o_hotel .grid li.large {
+	flex-basis: 60%;
+}
+/*MEDIA SCREEN*/
+@media screen and (max-width: 800px){
+	
+	.conheca_o_hotel .grid li.small,.conheca_o_hotel .grid li.large {
+     flex-basis: 100%;
+} 
+
+}
+/*CARACTERISTICAS*/
+
+.caracteristicas{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	background-color:  #191c03;
+}
+
+
+.caracteristicas h3{
+	margin-bottom:35px ;
+	font-size: 2rem;
+	color: #fff; 
+}
+.caracteristicas p{
+	max-width: 800px;
+	color: #fff;
+	margin-bottom: 35px; 
+
+}
+.caracteristicas hr{
+	background-color: #fff;
+	height: 2px;
+	border:none;
+	width: 200px;
+	margin-bottom: 70px; 
+}
+.caracteristicas .grid_dois{
+	display: flex;
+	justify-content: space-around;
+}
+.caracteristicas .grid_dois li{
+	width: 25%;
+	text-align: center;
+}
+.caracteristicas .grid_dois h4{
+	font-size: 2rem;
+	color: #c3c63b;
+}
+/*MEDIA SCREEN*/
+@media screen and (max-width: 800px){
+	.caracteristicas h3,.caracteristicas .grid_dois h4{font-size: 1.5rem}
+	.caracteristicas .grid_dois{
+		flex-direction: column;
+		align-items: center;
+	}
+	.caracteristicas .grid_dois li{width: 100%;}
+}
+/*NEWS LETTER*/
+.news_letter{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+.news_letter h3{
+    font-size: 2rem;
+    margin:35px 0;
+    color: #c3c63b;
+}
+.news_letter p{
+    margin-bottom:35px;
+    color: #c3c63b;
+}
+.news_letter hr{
+	width: 200px;
+	height: 2px;
+	border:none;
+	background-color: #c3c63b;
+	margin-bottom: 35px;
+}
+.news_letter form{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 80%;
+	max-width: 800px;
+}
+.news_letter form input{
+	padding: 15px;
+	border:1px solid #c3c63b;
+	color: #fff;
+	border-radius: 5px;
+	margin-right: 15px;
+	flex:1;
+}
+.news_letter form button{
+	padding: 15px;
+	background-color: #c3c63b;
+	color: #191c03;
+	text-transform: uppercase;
+}
+/*MEDIA SCREEN*/
+@media screen and (max-width: 800px){
+	.news_letter form input{
+		flex-basis: 100%;
+		margin-bottom: 15px;
+	}
+
+}
+/*FOOTER*/
+footer{
+	margin-top: 50px;
+	display: flex;
+	flex-direction: column;
+	background-color: #191c03;
+	align-items: center;
+}
+footer ul{
+	display: flex;
+	margin-bottom: 25px;
+}
+footer ul li{
+	margin-right: 15px;
+	color: #c3c63b;
+	padding-top: 10px;
+}
+footer ul li:last-child{margin-right: none;}
+footer  p{color: #c3c63b;}
